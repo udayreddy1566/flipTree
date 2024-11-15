@@ -23,7 +23,7 @@ const SignIn = () => {
         if(username && password){
             setLoading(true);
             fetch('https://fakestoreapi.com/auth/user',{
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
